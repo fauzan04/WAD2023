@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,29 @@
 
     <script>
       function changeInfo() {
+        var infoParagraph = document.getElementById("info");
+        infoParagraph.innerHTML = "Nama: Fauzan Victorino Jais<br>TTL: Denpasar, 19 September 2004<br>Usia: 19 tahun<br>Agama : Islam<br>Jenis kelamin : Laki-Laki";
+      }
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan WEB Bersama Pak Aman</title>
+  </head>
+  <body>
+    <h1>Apa yang dapat dilakukan javascript?</h1>
+    <p id="demo">Ketik tombol berikut untuk merubah konten.</p>
+    <button type="button" onclick="changeInfoAndRedirect()">Click Me!</button>
+
+    <p id="info"></p>
+
+    <script>
+      function changeInfoAndRedirect() {
         var infoParagraph = document.getElementById("info");
         infoParagraph.innerHTML = "Nama: Fauzan Victorino Jais<br>TTL: Denpasar, 19 September 2004<br>Usia: 19 tahun<br>Agama : Islam<br>Jenis kelamin : Laki-Laki";
       }

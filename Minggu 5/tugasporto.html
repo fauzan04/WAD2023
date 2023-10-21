@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan WEB Bersama Pak Aman</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        border: none;
+        color: #000;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Apa Yang Dapat Dilakukan JavaScript?</h1>
+    <p id="demo">Klik tombol berikut untuk melihat portofolio.</p>
+    <button type="button" onclick="changeInfoAndRedirect()">Lihat Portofolio!</button>
+
+    <p id="info"></p>
+
+    <script>
+      function changeInfoAndRedirect() {
+        var infoParagraph = document.getElementById("info");
+        infoParagraph.innerHTML = "Nama: Fauzan Victorino Jais<br>TTL: Denpasar, 19 September 2004<br>Usia: 19 tahun<br>Agama : Islam<br>Jenis kelamin : Laki-Laki";
+
+        window.location.href = "file:///D:/TELKOM%20UNIVERSITY/Course%20Semester%205/Pengembangan%20Aplikasi%20Website%20(WAD)/tugas%20mingguan/Minggu%205/Modul%201/latihanportfolio.html";
+      }
+    </script>
+  </body>
+</html>

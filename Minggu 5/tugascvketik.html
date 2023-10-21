@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f3f3f3;
+        padding: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 10px; /* Menambahkan margin atas */
+        background-color: #ffcc00;
+        border: none;
+        color: #000;
+        cursor: pointer;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      #cv {
+        display: none;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 5px 0;
+      }
+
+      ul ul {
+        margin-left: 20px;
+      }
+
+      .rounded-circle {
+        border-radius: 50%;
+      }
+
+      .img-thumbnail {
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <section class="jumbotron text-center">
+        <img src="fix.JPG" alt="Fauzan" width="150" class="rounded-circle img-thumbnail" />
+        <h1>Curriculum Vitae</h1>
+        <p id="demo">Klik tombol berikut untuk melihat CV Fauzan</p>
+        <button type="button" onclick="showCV()" style="margin-top: 10px">Lihat CV!</button>
+      </section>
+    </div>
+
+    <div id="cv">
+      <h2>Informasi CV Fauzan</h2>
+      <p>
+        Nama: Fauzan Victorino Jais<br />
+        NIM: 1202210119<br />
+        Kelas: SI4506
+      </p>
+
+      <h3>Tentang Saya</h3>
+      <p>
+        Saya adalah mahasiswa program sarjana jurusan sistem informasi di Universitas Telkom. Saya memiliki minat dalam pengembangan web, desain UI/UX, dan jaringan. Meskipun saya belum memiliki keahlian dalam bidang tersebut, saya memiliki
+        kemampuan dalam pemecahan masalah, komunikasi yang baik, dan kolaborasi.
+      </p>
+
+      <h3>Riwayat Pendidikan</h3>
+      <p>
+        Telkom University - Bandung, Jawa Barat, Indonesia<br />
+        Fakultas Teknik Industri, Sistem Informasi
+      </p>
+      <p>
+        SMA Progresif Bumi Shalawat - Sidoarjo, Jawa Timur, Indonesia<br />
+        International Class, Ilmu Pengetahuan
+      </p>
+
+      <h3>Kemampuan</h3>
+      <ul>
+        <li>Basic Programming (Python, Java)</li>
+        <li>Basic Network (IP Address, Subnetting)</li>
+        <li>Basic Graphic Design Tools (Figma, Canva)</li>
+        <li>UI Design, Prototyping</li>
+        <li>Bizagi Modeler</li>
+        <li>Microsoft Office</li>
+        <li>
+          Kemampuan Interpersonal:
+          <ul>
+            <li>Komunikasi</li>
+            <li>Penyelesaian Konflik</li>
+            <li>Kepemimpinan</li>
+            <li>Kolaborasi</li>
+            <li>Jaringan</li>
+            <li>Pemecahan Masalah</li>
+            <li>Pemikiran Kritis</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Sertifikat</h3>
+      <ul>
+        <li>EPRT (English Proficiency Test): 470</li>
+        <li>TOEFL Junior: 735 (A2)</li>
+        <li>Cambridge English: 126 (A2)</li>
+        <li>IELTS: 5</li>
+        <li>Oracle Java Programming</li>
+        <li>Oracle Java Foundation</li>
+        <li>Azure Fundamentals</li>
+      </ul>
+    </div>
+
+    <script>
+      function showCV() {
+        var cvDiv = document.getElementById("cv");
+        cvDiv.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
