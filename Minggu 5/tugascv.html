@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan WEB Bersama Pak Aman</title>
+    <style>
+      body {
+        background-image: url("bg.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 135vh;
+      }
+
+      #info img {
+        display: none;
+        max-width: 100%;
+      }
+
+      .content-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        border: none;
+        color: #000;
+        cursor: pointer;
+      }
+
+      .rounded-circle {
+        border-radius: 50%;
+      }
+
+      .img-thumbnail {
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <section class="jumbotron text-center">
+        <img src="fix.JPG" alt="Fauzan" width="150" class="rounded-circle img-thumbnail" />
+        <h1>Apa Yang Dapat Dilakukan JavaScript?</h1>
+        <p id="demo">Ketik tombol berikut untuk dapat melihat CV milik Fauzan.</p>
+        <button type="button" id="changeButton">Click Me!</button>
+      </section>
+    </div>
+
+    <div id="info">
+      <img src="cv fauzan.png" alt="CV Fauzan" width="700" height="900" />
+    </div>
+
+    <script>
+      function changeInfo() {
+        var infoDiv = document.getElementById("info");
+        var imgElement = infoDiv.querySelector("img");
+
+        imgElement.style.display = "block";
+      }
+
+      var changeButton = document.getElementById("changeButton");
+      changeButton.addEventListener("click", changeInfo);
+    </script>
+  </body>
+</html>
